@@ -3,11 +3,15 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Лендинги, которые приводят клиентов</title>
+  <title>Лендинги с заявками</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
+
+<div class="cursor-glow"></div>
 
 <header class="header">
   <div class="container">
@@ -20,9 +24,10 @@
     </div>
 
     <nav class="nav">
-      <a href="#about" class="nav-link">Обо мне</a>
-      <a href="#cases" class="nav-link">Кейсы</a>
-      <a href="#contact" class="nav-link">Контакты</a>
+      <a href="#about">Проблема</a>
+      <a href="#cases">Кейсы</a>
+      <a href="#price">Цена</a>
+      <a href="#contact">Контакты</a>
     </nav>
   </div>
 </header>
@@ -32,36 +37,43 @@
 <!-- HERO -->
 <section class="hero reveal">
   <div class="container">
-    <h2 class="typing"></h2>
+    <h2>
+      Получайте заявки с лендинга <br>
+      <span class="accent">уже через 3–7 дней</span>
+    </h2>
+
     <p class="subtitle">
-      Создаю лендинги для экспертов и малого бизнеса,
-      которые приводят клиентов уже в первые дни
+      Делаю сайты, которые не просто выглядят красиво — а приводят клиентов
     </p>
-    <button onclick="scrollToContact()">Получить клиентов</button>
+
+    <div class="hero-buttons">
+      <button class="magnetic" onclick="scrollToContact()">
+        Получить разбор 🚀
+      </button>
+    </div>
+
+    <p class="limit">Осталось 3 места на этой неделе</p>
+  </div>
+</section>
+
+<!-- PAIN -->
+<section class="reveal">
+  <div class="container">
+    <h2>Вы теряете клиентов прямо сейчас</h2>
+    <p>
+      Пока ваш сайт “просто есть”, конкуренты получают заявки каждый день
+    </p>
   </div>
 </section>
 
 <!-- PROBLEM -->
 <section class="about reveal" id="about">
   <div class="container glass">
-    <h2>Почему у вас нет заявок с сайта?</h2>
+    <h2>Почему нет заявок?</h2>
     <div class="features">
-      <div>❌ Сайт есть, но он не продаёт</div>
-      <div>❌ Люди заходят и уходят</div>
-      <div>❌ Нет понятного оффера</div>
-    </div>
-  </div>
-</section>
-
-<!-- SOLUTION -->
-<section class="reveal">
-  <div class="container glass">
-    <h2>Я делаю лендинги, которые продают</h2>
-    <p>Не просто дизайн — а структура, которая ведёт клиента к заявке</p>
-    <div class="features">
-      <div>🔥 Продающий оффер</div>
-      <div>🧠 Психология продаж</div>
-      <div>⚡ Быстрый запуск</div>
+      <div>❌ Нет сильного оффера</div>
+      <div>❌ Нет структуры</div>
+      <div>❌ Дизайн не продаёт</div>
     </div>
   </div>
 </section>
@@ -69,17 +81,22 @@
 <!-- CASES -->
 <section class="cases reveal" id="cases">
   <div class="container">
-    <h2>Результаты клиентов</h2>
+    <h2>Результаты</h2>
+
     <div class="cards">
-      <div class="card">
-        <h3>Фитнес эксперт</h3>
-        <p>+23 заявки за 4 дня</p>
+      <div class="card tilt">
+        <h3>Фитнес тренер</h3>
+        <p>Было: 0 заявок</p>
+        <p>Стало: 23 заявки за 4 дня</p>
       </div>
-      <div class="card">
+
+      <div class="card tilt">
         <h3>Онлайн школа</h3>
-        <p>Конверсия 14%</p>
+        <p>Было: 3%</p>
+        <p>Стало: 14% конверсия</p>
       </div>
-      <div class="card">
+
+      <div class="card tilt">
         <h3>Эксперт</h3>
         <p>Первые заявки в день запуска</p>
       </div>
@@ -87,28 +104,16 @@
   </div>
 </section>
 
-<!-- PROCESS -->
-<section class="reveal">
-  <div class="container glass">
-    <h2>Как мы работаем</h2>
-    <div class="features">
-      <div>1️⃣ Обсуждаем задачу</div>
-      <div>2️⃣ Делаю структуру</div>
-      <div>3️⃣ Запускаем сайт</div>
-    </div>
-  </div>
-</section>
-
-<!-- REVIEWS -->
-<section class="reveal">
+<!-- PRICE -->
+<section class="reveal" id="price">
   <div class="container">
-    <h2>Отзывы</h2>
+    <h2>Стоимость</h2>
+
     <div class="cards">
       <div class="card">
-        <p>“Пошли заявки уже в первый день!”</p>
-      </div>
-      <div class="card">
-        <p>“Наконец-то сайт начал работать”</p>
+        <h3>Лендинг под ключ</h3>
+        <p class="price">от 300€</p>
+        <p>Дизайн + структура + запуск</p>
       </div>
     </div>
   </div>
@@ -117,23 +122,18 @@
 <!-- CTA -->
 <section class="contact reveal" id="contact">
   <div class="container glass">
-    <h2>Готовы получать клиентов?</h2>
-    <p>Напишите мне в Telegram — разберём вашу ситуацию</p>
-    <button onclick="scrollToContact()">Написать</button>
+    <h2>Хочешь такие же результаты?</h2>
+    <p>Напиши — разберу твой сайт и покажу точки роста</p>
+
+    <button class="magnetic" onclick="goTelegram()">
+      Получить разбор 🔥
+    </button>
   </div>
 </section>
 
 <footer class="footer">
   <p>© 2026 Irina.dev</p>
 </footer>
-
-<!-- TELEGRAM BUTTON -->
-<div class="tg-wrapper">
-  <span class="tg-tooltip">Напишите мне</span>
-  <a href="https://t.me/iyazykova?text=Здравствуйте! Хочу обсудить лендинг"
-     class="tg-button"
-     target="_blank">💬</a>
-</div>
 
 <script src="script.js"></script>
 </body>
