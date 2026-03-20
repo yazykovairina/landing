@@ -146,3 +146,49 @@ body {
   font-weight: 700;
   color: #00ffcc;
 }
+
+/* SECTION */
+.contact {
+  padding: 120px 20px;
+  display: flex;
+  justify-content: center;
+}
+
+/* BOX */
+.cta-box {
+  max-width: 600px;
+  width: 100%;
+  text-align: center;
+  padding: 50px 30px;
+  border-radius: 20px;
+
+  background: rgba(255,255,255,0.05);
+  backdrop-filter: blur(20px);
+
+  border: 1px solid rgba(255,255,255,0.08);
+
+  box-shadow: 
+    0 0 40px rgba(0,255,200,0.08),
+    0 20px 60px rgba(0,0,0,0.6);
+}
+
+/* spacing */
+.cta-box h2 {
+  margin-bottom: 15px;
+}
+
+.cta-box p {
+  margin-bottom: 25px;
+  color: #aaa;
+}
+
+.cta-box::before {
+  content: "";
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  background: #00ffcc;
+  filter: blur(120px);
+  opacity: 0.15;
+  z-index: -1;
+}
