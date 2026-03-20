@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Лендинги, которые приводят клиентов</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header class="header">
+  <div class="container">
+    <h1>Irina.dev</h1>
+
+    <div class="burger" onclick="toggleMenu()">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+
+    <nav class="nav">
+      <a href="#about" class="nav-link">Обо мне</a>
+      <a href="#cases" class="nav-link">Кейсы</a>
+      <a href="#contact" class="nav-link">Контакты</a>
+    </nav>
+  </div>
+</header>
+
+<div class="overlay" onclick="toggleMenu()"></div>
+
+<!-- HERO -->
+<section class="hero reveal">
+  <div class="container">
+    <h2 class="typing"></h2>
+    <p class="subtitle">
+      Создаю лендинги для экспертов и малого бизнеса,
+      которые приводят клиентов уже в первые дни
+    </p>
+    <button onclick="scrollToContact()">Получить клиентов</button>
+  </div>
+</section>
+
+<!-- PROBLEM -->
+<section class="about reveal" id="about">
+  <div class="container glass">
+    <h2>Почему у вас нет заявок с сайта?</h2>
+    <div class="features">
+      <div>❌ Сайт есть, но он не продаёт</div>
+      <div>❌ Люди заходят и уходят</div>
+      <div>❌ Нет понятного оффера</div>
+    </div>
+  </div>
+</section>
+
+<!-- SOLUTION -->
+<section class="reveal">
+  <div class="container glass">
+    <h2>Я делаю лендинги, которые продают</h2>
+    <p>Не просто дизайн — а структура, которая ведёт клиента к заявке</p>
+    <div class="features">
+      <div>🔥 Продающий оффер</div>
+      <div>🧠 Психология продаж</div>
+      <div>⚡ Быстрый запуск</div>
+    </div>
+  </div>
+</section>
+
+<!-- CASES -->
+<section class="cases reveal" id="cases">
+  <div class="container">
+    <h2>Результаты клиентов</h2>
+    <div class="cards">
+      <div class="card">
+        <h3>Фитнес эксперт</h3>
+        <p>+23 заявки за 4 дня</p>
+      </div>
+      <div class="card">
+        <h3>Онлайн школа</h3>
+        <p>Конверсия 14%</p>
+      </div>
+      <div class="card">
+        <h3>Эксперт</h3>
+        <p>Первые заявки в день запуска</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROCESS -->
+<section class="reveal">
+  <div class="container glass">
+    <h2>Как мы работаем</h2>
+    <div class="features">
+      <div>1️⃣ Обсуждаем задачу</div>
+      <div>2️⃣ Делаю структуру</div>
+      <div>3️⃣ Запускаем сайт</div>
+    </div>
+  </div>
+</section>
+
+<!-- REVIEWS -->
+<section class="reveal">
+  <div class="container">
+    <h2>Отзывы</h2>
+    <div class="cards">
+      <div class="card">
+        <p>“Пошли заявки уже в первый день!”</p>
+      </div>
+      <div class="card">
+        <p>“Наконец-то сайт начал работать”</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="contact reveal" id="contact">
+  <div class="container glass">
+    <h2>Готовы получать клиентов?</h2>
+    <p>Напишите мне в Telegram — разберём вашу ситуацию</p>
+    <button onclick="scrollToContact()">Написать</button>
+  </div>
+</section>
+
+<footer class="footer">
+  <p>© 2026 Irina.dev</p>
+</footer>
+
+<!-- TELEGRAM BUTTON -->
+<div class="tg-wrapper">
+  <span class="tg-tooltip">Напишите мне</span>
+  <a href="https://t.me/iyazykova?text=Здравствуйте! Хочу обсудить лендинг"
+     class="tg-button"
+     target="_blank">💬</a>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
