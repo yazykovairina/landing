@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Лендинги с заявками</title>
+  <title>Сайт для бизнеса</title>
 
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
@@ -11,129 +11,98 @@
 
 <body>
 
-<div class="cursor-glow"></div>
-
 <header class="header">
   <div class="container">
     <h1>Irina.dev</h1>
-
-    <div class="burger" onclick="toggleMenu()">
-      <span></span>
-      <span></span>
-      <span></span>
-    </div>
-
-    <nav class="nav">
-      <a href="#about">Проблема</a>
-      <a href="#cases">Кейсы</a>
-      <a href="#price">Цена</a>
-      <a href="#contact">Контакты</a>
-    </nav>
   </div>
 </header>
 
-<div class="overlay" onclick="toggleMenu()"></div>
-
 <!-- HERO -->
-<section class="hero reveal">
+<section class="hero">
   <div class="container">
     <h2>
-      Получайте заявки с лендинга <br>
-      <span class="accent">уже через 3–7 дней</span>
+      Помогаю получать клиентов через сайт <br>
+      <span class="accent">уже в первые недели</span>
     </h2>
 
     <p class="subtitle">
-      Делаю сайты, которые не просто выглядят красиво — а приводят клиентов
+      Создаю сайты для малого бизнеса, которые работают как инструмент привлечения клиентов
     </p>
 
-    <div class="hero-buttons">
-      <button class="magnetic" onclick="scrollToContact()">
-        Получить разбор 🚀
-      </button>
-    </div>
-
-    <p class="limit">Осталось 3 места на этой неделе</p>
+    <button class="primary-btn" onclick="goTelegram()">
+      Обсудить проект
+    </button>
   </div>
 </section>
 
 <!-- PAIN -->
-<section class="reveal">
+<section>
   <div class="container">
-    <h2>Вы теряете клиентов прямо сейчас</h2>
-    <p>
-      Пока ваш сайт “просто есть”, конкуренты получают заявки каждый день
-    </p>
+    <h2>Если у вас сейчас так:</h2>
+
+    <div class="features">
+      <div>❌ Клиенты приходят нестабильно</div>
+      <div>❌ Всё зависит от соцсетей</div>
+      <div>❌ Нет системы привлечения</div>
+    </div>
   </div>
 </section>
 
-<!-- PROBLEM -->
-<section class="about reveal" id="about">
+<!-- SOLUTION -->
+<section>
   <div class="container glass">
-    <h2>Почему нет заявок?</h2>
+    <h2>Я создаю сайты, которые приводят клиентов</h2>
+
     <div class="features">
-      <div>❌ Нет сильного оффера</div>
-      <div>❌ Нет структуры</div>
-      <div>❌ Дизайн не продаёт</div>
+      <div>📊 Продуманная структура</div>
+      <div>🧠 Тексты под вашу аудиторию</div>
+      <div>💻 Современный дизайн</div>
+      <div>🚀 Готовность к запуску</div>
     </div>
   </div>
 </section>
 
 <!-- CASES -->
-<section class="cases reveal" id="cases">
+<section>
   <div class="container">
-    <h2>Результаты</h2>
+    <h2>Результаты клиентов</h2>
 
     <div class="cards">
-      <div class="card tilt">
-        <h3>Фитнес тренер</h3>
-        <p>Было: 0 заявок</p>
-        <p>Стало: 23 заявки за 4 дня</p>
+      <div class="card">
+        <p>Бизнес без сайта → первые заявки через несколько дней</p>
       </div>
 
-      <div class="card tilt">
-        <h3>Онлайн школа</h3>
-        <p>Было: 3%</p>
-        <p>Стало: 14% конверсия</p>
-      </div>
-
-      <div class="card tilt">
-        <h3>Эксперт</h3>
-        <p>Первые заявки в день запуска</p>
+      <div class="card">
+        <p>Эксперт получил стабильный поток клиентов</p>
       </div>
     </div>
   </div>
 </section>
 
 <!-- PRICE -->
-<section class="reveal" id="price">
+<section>
   <div class="container">
     <h2>Стоимость</h2>
 
-    <div class="cards">
-      <div class="card">
-        <h3>Лендинг под ключ</h3>
-        <p class="price">от 300€</p>
-        <p>Дизайн + структура + запуск</p>
-      </div>
+    <div class="card">
+      <h3>Сайт под ключ</h3>
+      <p class="price">от 15 000 ₽</p>
+      <p>Полностью готовый инструмент для привлечения клиентов</p>
     </div>
   </div>
 </section>
 
 <!-- CTA -->
-<section class="contact reveal" id="contact">
+<section class="contact">
   <div class="container glass">
-    <h2>Хочешь такие же результаты?</h2>
-    <p>Напиши — разберу твой сайт и покажу точки роста</p>
+    <h2>Готовы начать?</h2>
+    <p>Напишите — обсудим ваш бизнес и задачи</p>
 
-    <button class="magnetic" onclick="goTelegram()">
-      Получить разбор 🔥
+    <button class="primary-btn" onclick="goTelegram()">
+      Написать в Telegram
     </button>
   </div>
 </section>
-
-<footer class="footer">
-  <p>© 2026 Irina.dev</p>
-</footer>
 
 <script src="script.js"></script>
 </body>
